@@ -15,7 +15,7 @@ get "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javas
 
 # Download HTML5 Boilerplate JavaScripts
 get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/modernizr-1.7.min.js", "public/javascripts/modernizr.js"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/jquery-1.6.min.js", "public/javascripts/jquery.js"
+get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/jquery-1.6.1.min.js", "public/javascripts/jquery.js"
 get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/respond.min.js", "public/javascripts/respond.js"
 get "https://github.com/paulirish/html5-boilerplate/raw/master/js/plugins.js", "public/javascripts/plugins.js"
 
