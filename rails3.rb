@@ -47,7 +47,7 @@ gsub_file 'app/views/layouts/application.html.erb', /<link rel="stylesheet" href
   "<%= stylesheet_link_tag \"style\", \"application\", :media => \"all\", :cache => \"styles\" %>"
 end
 gsub_file 'app/views/layouts/application.html.erb', /<script src="js\/libs\/modernizr-1.7.min.js"><\/script>/, '<%= javascript_include_tag "modernizr", "respond", :cache => "modernizer-respond" %>'
-gsub_file 'app/views/layouts/application.html.erb', /<script src='js\/libs\/respond.min.js'><\/script>/, '\1'
+gsub_file 'app/views/layouts/application.html.erb', /<script src="js\/libs\/respond.min.js"><\/script>/, '\1'
 gsub_file 'app/views/layouts/application.html.erb', /<meta charset="utf-8">/ do
   "<meta charset=\"utf-8\">
    <%= csrf_meta_tag %>"
@@ -66,3 +66,4 @@ application do
     config.action_view.javascript_expansions[:defaults] = %w(jquery rails plugins)
   "
 end
+
