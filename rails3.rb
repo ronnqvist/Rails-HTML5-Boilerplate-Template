@@ -14,7 +14,7 @@ end
 get "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
 
 # Download HTML5 Boilerplate JavaScripts
-get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/modernizr-1.7.min.js", "public/javascripts/modernizr.js"
+get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/modernizr-2.0.min.js", "public/javascripts/modernizr.js"
 get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/jquery-1.6.1.min.js", "public/javascripts/jquery.js"
 get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/respond.min.js", "public/javascripts/respond.js"
 get "https://github.com/paulirish/html5-boilerplate/raw/master/js/plugins.js", "public/javascripts/plugins.js"
@@ -26,7 +26,7 @@ get "https://github.com/paulirish/html5-boilerplate/raw/master/css/style.css", "
 inside('public/stylesheets') do
   FileUtils.touch 'application.css'
 end
-append_file 'public/stylesheets/application.css', '@import url("scaffold.css"); /* Remove is not using scaffolding */'
+append_file 'public/stylesheets/application.css', '@import url("scaffold.css"); /* Remove if not using scaffolding */'
 
 # Download HTML5 Boilerplate Site Root Assets
 get "https://github.com/paulirish/html5-boilerplate/raw/master/apple-touch-icon-114x114-precomposed.png", "public/apple-touch-icon-114x114-precomposed.png"
@@ -46,7 +46,7 @@ get "https://github.com/paulirish/html5-boilerplate/raw/master/index.html", "app
 gsub_file 'app/views/layouts/application.html.erb', /<link rel="stylesheet" href="css\/style.css">/ do
   "<%= stylesheet_link_tag \"style\", \"application\", :media => \"all\", :cache => \"styles\" %>"
 end
-gsub_file 'app/views/layouts/application.html.erb', /<script src="js\/libs\/modernizr-1.7.min.js"><\/script>/, '<%= javascript_include_tag "modernizr", "respond", :cache => "modernizer-respond" %>'
+gsub_file 'app/views/layouts/application.html.erb', /<script src="js\/libs\/modernizr-2.0.min.js"><\/script>/, '<%= javascript_include_tag "modernizr", "respond", :cache => "modernizer-respond" %>'
 gsub_file 'app/views/layouts/application.html.erb', /<script src="js\/libs\/respond.min.js"><\/script>/, '\1'
 gsub_file 'app/views/layouts/application.html.erb', /<meta charset="utf-8">/ do
   "<meta charset=\"utf-8\">
@@ -66,4 +66,3 @@ application do
     config.action_view.javascript_expansions[:defaults] = %w(jquery rails plugins)
   "
 end
-
