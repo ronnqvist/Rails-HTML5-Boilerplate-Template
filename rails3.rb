@@ -14,13 +14,13 @@ end
 get "https://github.com/rails/jquery-ujs/raw/master/src/rails.js", "public/javascripts/rails.js"
 
 # Download HTML5 Boilerplate JavaScripts
-get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/modernizr-2.0.min.js", "public/javascripts/modernizr.js"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/jquery-1.6.1.min.js", "public/javascripts/jquery.js"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/js/libs/respond.min.js", "public/javascripts/respond.js"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/js/plugins.js", "public/javascripts/plugins.js"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/js/libs/modernizr-2.0.min.js", "public/javascripts/modernizr.js"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/js/libs/jquery-1.6.1.min.js", "public/javascripts/jquery.js"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/js/libs/respond.min.js", "public/javascripts/respond.js"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/js/plugins.js", "public/javascripts/plugins.js"
 
 # Download HTML5 Boilerplate Stylesheet
-get "https://github.com/paulirish/html5-boilerplate/raw/master/css/style.css", "public/stylesheets/style.css"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/css/style.css", "public/stylesheets/style.css"
 
 # Create application.css for application styles and add import statment for scaffold.css
 inside('public/stylesheets') do
@@ -29,20 +29,20 @@ end
 append_file 'public/stylesheets/application.css', '@import url("scaffold.css"); /* Remove if not using scaffolding */'
 
 # Download HTML5 Boilerplate Site Root Assets
-get "https://github.com/paulirish/html5-boilerplate/raw/master/apple-touch-icon-114x114-precomposed.png", "public/apple-touch-icon-114x114-precomposed.png"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/apple-touch-icon-57x57-precomposed.png", "public/apple-touch-icon-57x57-precomposed.png"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/apple-touch-icon-72x72-precomposed.png", "public/apple-touch-icon-72x72-precomposed.png"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/apple-touch-icon-precomposed.png", "public/apple-touch-icon-precomposed.png"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/apple-touch-icon.png", "public/apple-touch-icon.png"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/crossdomain.xml", "public/crossdomain.xml"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/humans.txt", "public/humans.txt"
-get "https://github.com/paulirish/html5-boilerplate/raw/master/.htaccess", "public/.htaccess"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/apple-touch-icon-114x114-precomposed.png", "public/apple-touch-icon-114x114-precomposed.png"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/apple-touch-icon-57x57-precomposed.png", "public/apple-touch-icon-57x57-precomposed.png"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/apple-touch-icon-72x72-precomposed.png", "public/apple-touch-icon-72x72-precomposed.png"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/apple-touch-icon-precomposed.png", "public/apple-touch-icon-precomposed.png"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/apple-touch-icon.png", "public/apple-touch-icon.png"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/crossdomain.xml", "public/crossdomain.xml"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/humans.txt", "public/humans.txt"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/.htaccess", "public/.htaccess"
 
 # Update application.html.erb with HTML5 Boilerplate index.html content
 inside('app/views/layouts') do
   FileUtils.rm_rf 'application.html.erb'
 end
-get "https://github.com/paulirish/html5-boilerplate/raw/master/index.html", "app/views/layouts/application.html.erb"
+get "https://github.com/russfrisch/html5-boilerplate/raw/master/index.html", "app/views/layouts/application.html.erb"
 gsub_file 'app/views/layouts/application.html.erb', /<link rel="stylesheet" href="css\/style.css">/ do
   "<%= stylesheet_link_tag \"style\", \"application\", :media => \"all\", :cache => \"styles\" %>"
 end

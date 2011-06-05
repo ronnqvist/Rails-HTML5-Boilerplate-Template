@@ -1,3 +1,9 @@
+Change Log
+===========
+6/5/2011 - Updated HTML5 Boilerplate assets to pull from my <b>unmodified</b> fork of Paul Irish's HTML5 Boilerplate repo.<br>
+ This was done to prevent immediate breakage of this template when files with version numbers in the filename are updated.<br>
+ If you notice that my HTML5 Boilerplate fork has gotten stale before I do, please let me know.
+
 About
 ======
 A Rails application template used to setup a new Rails app using Paul Irish's HTML5 Boilerplate (http://html5boilerplate.com/)<br>
