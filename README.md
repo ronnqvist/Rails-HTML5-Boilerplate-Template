@@ -1,3 +1,7 @@
+Rails 3.1+ Support
+===================
+Due to the major differences between asset handling introduced in Rails 3.1 I have decided create an entirely new Github project for Rails 3.1 support. A rails 3.1 compatible template can be found here: https://github.com/russfrisch/h5bp-rails
+
 Change Log
 ===========
 6/5/2011 - Updated HTML5 Boilerplate assets to pull from my <b>unmodified</b> fork of Paul Irish's HTML5 Boilerplate repo.<br>
@@ -18,7 +22,7 @@ Can also be run directly from github:<br>
 Rails 3:<br>
 `rails new <appname> -m https://github.com/russfrisch/Rails-HTML5-Boilerplate-Template/raw/master/rails3.rb`<br>
 
-Rails 3 Version
+Rails 3
 ================
 This template does the following:
 
@@ -30,9 +34,9 @@ This template does the following:
 6.  Modifies the updated application.html.erb to add back in the appropriate default Rails content 
 7.  Updates javascript :defaults expansion to include jquery, plugins, and rails driver.
 
-Rails 3.1 Version
-================
-Comming soon with optional support to revert out CoffeeScript and SCSS changes if you so desire.
+Rails 3.1+ Support
+===================
+For Rails 3.1+ support please see this template: https://github.com/russfrisch/h5bp-rails
 
 Push Requests
 ==============
