@@ -19,8 +19,10 @@ Rails 3:<br>
 `rails new <appname> -m <path/to/rails3.rb>`<br>
 
 Can also be run directly from github:<br>
-Rails 3:<br>
 `rails new <appname> -m https://github.com/russfrisch/Rails-HTML5-Boilerplate-Template/raw/master/rails3.rb`<br>
+
+Can also be applied to an existing project, but will need some integration by hand (and your application.html.erb is pretty much overwritten):
+`rake rails:template LOCATION=https://github.com/russfrisch/Rails-HTML5-Boilerplate-Template/raw/master/rails3.rb`<br>
 
 Rails 3
 ================
